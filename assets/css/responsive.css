@@ -1,124 +1,94 @@
-
-
 /*
-Author: XpeedStudio
-Author URI: http://themeforest.net/user/XpeedStudio/portfolio
+Author: Gaurav Neupane (Minimalist Light Theme - Responsive)
 */
 
-/* Portrait tablets and medium desktops */
+/* ==========================================================================
+   Tablet (992px - 1199px)
+   ========================================================================== */
 @media (min-width: 992px) and (max-width: 1199px) {
-    body {
-        font-size: 15px;
-    }
 	.home-content h1 {
-    font-size: 48px;
+		font-size: 4.5rem;
+		/* Scaled down from 5rem */
 	}
-	.home-content p {
-    font-size: 21px;
-	}
-	.portfolio-wrapper2 .portfolio-item.width-img {
-    height: 198px;
-	}
-    
-
 }
 
-/* Portrait tablets and small desktops */
-@media  (max-width: 991px) {
-    html {
-        font-size: 80%;
-    }
-	.about-content h4 {
-    font-size: 14px;
-	}
-	
-	.contact-area {
-    padding: 60px 40px 124px 40px;
+/* ==========================================================================
+   Mobile & Tablet (Max 991px)
+   ========================================================================== */
+@media (max-width: 991px) {
+	.sections {
+		padding: 60px 0;
 	}
 
+	.home-content h1 {
+		font-size: 3.5rem;
+	}
+
+	.minimal-card {
+		padding: 2rem;
+		margin-bottom: 20px;
+	}
+
+	/* Ensure About photo is centered or managed well */
+	.about-photo {
+		margin-bottom: 30px;
+		text-align: center;
+	}
+
+	/* Sticky sidebar behavior disable for tablet/mobile if needed */
+	.sticky-top {
+		position: static !important;
+		margin-bottom: 30px;
+	}
 }
-/* Landscape phones and portrait tablets */
+
+/* ==========================================================================
+   Mobile Landscape (Max 767px)
+   ========================================================================== */
 @media (max-width: 767px) {
-    html {
-        font-size: 70%;
-    }
 	.home-content h1 {
-    font-size: 46px;
+		font-size: 3rem;
 	}
+
 	.home-content p {
-    font-size: 20px;
+		font-size: 1.1rem;
 	}
-	.about-content a {
-    margin-bottom: 20px;
+
+	.minimal-card {
+		padding: 1.5rem;
 	}
-	.experience-content {
-    margin-bottom: 20px;
+
+	.portfolio-item img {
+		width: 100%;
 	}
-	
-	.contact-area {
-    margin-bottom: 20px;
-	}
-	.features-bg {
-    margin: 0 auto;
-    margin-bottom: 20px;
-	}
-	
-   
 }
 
-
-
-/* Landscape phones and smaller */
+/* ==========================================================================
+   Mobile Portrait (Max 480px)
+   ========================================================================== */
 @media (max-width: 480px) {
-    html {
-        font-size: 60%;
-    }
 	.home-content h1 {
-    font-size: 18px;
-	}
-	.home-content p {
-    font-size: 12px;
-	}
-	.heading-content h3 {
-    font-size: 20px;
-	}
-	.experience-content h4 {
-    font-size: 18px;
-	}
-   .experience-content .content-details h5 {
-    font-size: 15px;
-	}
-	.testimonial-content .testimonial-quote p {
-    font-size: 12px;
-	}
-	.contact-wrapper h4 {
-    font-size: 18px;
-	}
-	.cd-header {
-    top: 3%;
+		font-size: 2.5rem;
 	}
 
-}
-
-
-
-@media (max-width: 320px) {
-
-
-    html {
-        font-size: 50%;
-    }
-	.home-content p {
-    font-size: 11px;
+	/* Stack buttons */
+	.home-content .btn {
+		width: 100%;
+		margin-bottom: 10px;
+		display: block;
 	}
-	.cd-header {
-    top: 3%;
+
+	.home-content .d-flex {
+		display: block !important;
 	}
-	.overlay {
-    min-height: 500px;
+
+	/* Navbar tweaks */
+	.navbar-brand img {
+		height: 30px;
 	}
-	.home-wrapper {
-    margin-top: 115px;
+
+	.minimal-card {
+		padding: 1.25rem;
+		border-radius: 12px;
 	}
 }
-
